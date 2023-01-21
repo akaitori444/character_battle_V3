@@ -1,4 +1,7 @@
 <?php
+session_start();
+include('functions.php');
+check_session_id();
 
 
 ?>
@@ -153,18 +156,13 @@
           <div>
             アイテム名: <input type="text" name="name">
             <div>
-            <textarea
-              name="caption"
-              placeholder="アイテム説明(140文字以下)"
-              id="caption"
-            ></textarea>
             </div>
           </div>
           <h1>スキル</h1>
           <p>キャラクターのスキルを選択してください</p>
           <p>同じものは選べません</p>
           <!--1つ目-->
-          <select name="skill">
+          <select name="skill1">
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
             <option value="skill_a2">武道</option>
@@ -211,7 +209,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
           <!--2つ目-->
-          <select name="skill">
+          <select name="skill2">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -259,7 +257,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
           <!--3つ目-->
-          <select name="skill">
+          <select name="skill3">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -307,7 +305,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
           <!--4つ目-->
-          <select name="skill">
+          <select name="skill4">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -355,7 +353,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
+            <select name="skill5">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -403,7 +401,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
+            <select name="skill6">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -451,7 +449,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
+            <select name="skill7">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -499,7 +497,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
+            <select name="skill8">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -547,7 +545,7 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
+            <select name="skill9">
             <option value="skill_n">なし</option>
             <optgroup label="近接">
             <option value="skill_a1">殴打</option>
@@ -595,53 +593,6 @@
             <option value="skill_g13">破損耐性</option>
             </select>
             
-            <select name="skill">
-            <option value="skill_n">なし</option>
-            <optgroup label="近接">
-            <option value="skill_a1">殴打</option>
-            <option value="skill_a2">武道</option>
-            <option value="skill_a3">反撃</option>
-            <option value="skill_a4">暴走</option>
-            <optgroup label="遠隔">
-            <option value="skill_b1">射撃</option>
-            <option value="skill_b2">波動</option>
-            <option value="skill_b3">閃光</option>
-            <option value="skill_b4">狙撃</option>
-            <optgroup label="探索">
-            <option value="skill_c1">探知</option>
-            <option value="skill_c2">創作</option>
-            <option value="skill_c3">解析</option>
-            <option value="skill_c4">回避</option>
-            <optgroup label="補助">
-            <option value="skill_d1">救援</option>
-            <option value="skill_d2">調律</option>
-            <option value="skill_d3">庇護</option>
-            <option value="skill_d4">蘇生</option>
-            <optgroup label="変化">
-            <option value="skill_e1">炎症</option>
-            <option value="skill_e2">休眠</option>
-            <option value="skill_e3">破損</option>
-            <option value="skill_e4">召喚</option>
-            <optgroup label="特殊">
-            <option value="skill_f1">共鳴</option>
-            <option value="skill_f2">拘束</option>
-            <option value="skill_f3">模倣</option>
-            <option value="skill_f4">狂乱</option>
-            <optgroup label="カスタム">
-            <option value="skill_g1">諸刃</option>
-            <option value="skill_g2">代償</option>
-            <option value="skill_g3">全力</option>
-            <option value="skill_g4">吸収</option>
-            <option value="skill_g5">俊敏</option>
-            <option value="skill_g6">厄災</option>
-            <option value="skill_g7">支援</option>
-            <option value="skill_g8">商才</option>
-            <option value="skill_g9">術士</option>
-            <option value="skill_g10">祝福</option>
-            <option value="skill_g11">炎症耐性</option>
-            <option value="skill_g12">休眠耐性</option>
-            <option value="skill_g13">破損耐性</option>
-            </select>
             
           <input type="reset" value="リセットする">
           <div>

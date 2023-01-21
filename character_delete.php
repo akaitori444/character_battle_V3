@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once "./functions.php";
+check_session_id();
 $pdo = connect_vt_db();
 
 //受信確認用

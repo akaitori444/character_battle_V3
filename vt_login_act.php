@@ -9,7 +9,7 @@ include('functions.php');
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$pdo = connect_to_db();
+$pdo = connect_vt_db();
 
 // SQL実行
 // username，password，deleted_atの3項目全ての条件満たすデータを抽出する．
@@ -42,6 +42,6 @@ if (!$user) {
   $_SESSION['session_id'] = session_id();
   $_SESSION['is_admin'] = $user['is_admin'];
   $_SESSION['username'] = $user['username'];
-  header("Location:vt_read.php");
+  header("Location:vt_list.php");
   exit();
 }

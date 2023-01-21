@@ -53,7 +53,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <th>【ついせき】</th>
           <th>選ぶ</th>
           <th>編集</th>
-          <th>削除</th>
         </tr>
       </thead>
       <tbody>
@@ -110,7 +109,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <td><?php echo $record["chase"] ?></td>
           <td><div><button>バトルを行う</button></div></td>
           <td><a href='character_edit.php?id={$record["id"]}'>edit</a></td>
-          <td><a href='character_delete.php?id={$record["id"]}'>delete</a></td>
           <td><?php 
           $pl_name = $record["pl_name"];
           $file_path = $record["file_path"];

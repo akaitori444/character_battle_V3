@@ -1,6 +1,7 @@
 <?php
 require_once "./functions.php";
 $pdo = connect_vt_db();
+check_session_id();
 
 $id = $_GET['id'];
 
@@ -45,7 +46,7 @@ exit();
   <body>
     <div>
       <div class="top">
-        <div class="title">バトルコロシアム</div>
+        <div class="title">キャラクター編集</div>
       </div>
     </div>
     <a href="vt_list.php">キャラクターリスト</a>

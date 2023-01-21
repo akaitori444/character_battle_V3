@@ -6,6 +6,10 @@ var_dump($_POST);
 echo('</pre>');
 exit();
 */
+session_start();
+include('functions.php');
+check_session_id();
+
 if($_POST["battle_command"] == 9)
 {
   header("location: vt_list.php");
